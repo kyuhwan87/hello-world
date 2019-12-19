@@ -82,7 +82,7 @@ See 'git help git' for an overview of the system.
 git init
 
 
-ls -al : 현재 디렉토리의 파일목록을 보여줌 
+ls -al : 현재 디렉토리의 파일목록을 보여줌 (list all)
 drwxr-xr-x 1 propa 197121 0 12월 19 01:37 .git/ (.git 폴더 생긴거 보이제? 버젼관리시 이 폴더안에 버젼의 정보가 저장되므로 즁요한 디렉토리 )
 
 버전설정을 위해 (빔, vim) 이라는 에디터를 사용하는데 다깔려잇음 ㅇㅇ 
@@ -141,11 +141,33 @@ commit 585108cbdb8277cfd5f3fafe4ed31be0fdceedba
 Author: kyuhwan <kyuhwan1020@gmail.com>
 Date:   Thu Dec 19 11:32:30 2019 +0900
 
-    1#
+
 
 <저장 공간 > 
  cp f2.txt f3.txt 파일 복제 
 clear : 입력부분 초기화 
+
+stage area : git add 할시 커밋될 파일들이 올라가 대기하는 장소  
+repository : commite 된 파일들이 저장 될곳 
+
+
+< 변경사항 확인 >
+
+
+로그에서 출력되는 버전 간의 차이점을 출력하고 싶을 때 
+git log -p 
+
+버전 간의 차이점을 비교할 때
+git diff '버전 id'..'버전 id2'
+
+git add하기 전과 add한 후의 파일 내용을 비교할 때 
+git diff
+
+commit d2f5658c01a2c066a8902792610c40a83c41206f 각 버전의 고유한 아이디 
+커밋의 고유 숫자를 복사하여 
+
+
+
 
 
 
