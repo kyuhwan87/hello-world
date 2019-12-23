@@ -1,5 +1,10 @@
 # hello-world
 
+Git의 3대요소
+1. Version(버전)
+2. Backup(백업)
+3. Collaborate(협업)
+
 원격 저장소 
 나의 작업을 온라인에 저장 
 소스코드백업 + 협업 
@@ -32,54 +37,12 @@ $ cd gitfth : gitfth 여기로 가자 (cd)
 $ git
 
 <버젼 확인, 설정 관리>
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
-
-These are common Git commands used in various situations:
-
 start a working area (see also: git help tutorial) 작업을 시작할꺼면 
-   clone     Clone a repository into a new directory '클론' 명령어나 
-   init      Create an empty Git repository or reinitialize an existing one '이닛' 명령어를 사용해라
+init Create an empty Git repository or reinitialize an existing one '이닛' 명령어를 사용해라
    : 현재 디렉토리에서 작업을 시작하겠다는 뜻 (이니시 )
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
-
 //현재 디렉토리를 git의 (버전) 저장소로 만듭니다. 
-git init
+git init. 초기화 시킨다 
 
 
 ls -al : 현재 디렉토리의 파일목록을 보여줌 (list all)
@@ -163,36 +126,52 @@ commit d2f5658c01a2c066a8902792610c40a83c41206f 각 버전의 고유한 아이�
 커밋의 고유 숫자를 복사하여 
 
 q : 나가기 
-
 아래 명령은 버전 id로 돌아가는 명령입니다. 
-
 git reset --hard "버전 id" 
 
 버전 id의 커밋을 취소한 내용을 새로운 버전으로 만드는 명령
 
 git revert "버전 id"
 
-commit	528,000	7.981980075
-push	523,000	7.906393143
-pull	506,000	7.649397572
-clone	489,000	7.392402002
-checkout	470,000	7.105171658
-add	446,000	6.742354382
-branch	439,000	6.636532676
-log	388,000	5.865545964
-diff	369,000	5.578315621
-fetch	355,000	5.36667221
-merge	354,000	5.351554823
-init	343,000	5.185263572
-status	286,000	4.323572541
-reset	267,000	4.036342197
-tag	246,000	3.718877081
-rebase	203,000	3.068829461
-rm	142,000	2.146668884
-show	104,000	1.572208197
-bisect	62,800	0.9493718726
-grep	49,400	0.7467988934
-mv	44,700	0.6757471768
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<브렌치  + 컨플릭트 > 
+
+공통적인 내용과 차별화된 내용의 구분
+같은뿌리지만 서로 다른 역사를 써내려가는 경우가 있다 . 
+"가지와 충돌" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
