@@ -134,7 +134,7 @@ git reset --hard "버전 id"
 git revert "버전 id"
 
 
-
+-m "xXXXXXXX" : 메세지 나타내기
 
 
 
